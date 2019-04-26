@@ -20,14 +20,31 @@ const printToDom = (divId, textToPrint) => {
   const selectedDiv = document.getElementById(divId);
   selectedDiv.innerHTML = textToPrint;
 };
- 
+const deleteFunction = (e) => {
+  const buttonId = e.target.id;
+  student.forEach((student, index) => {
+    if(student.id === buttonId){
+      student.splice(index, 1);
+    }
+  })
+  domStringBuilder(student);
+  addDeleteEvents();
+};
+
+const addDeleteEvents = () => {
+  const deleteButtons = document.getElementsByClassName('deleteButton');
+  for(let i=0; i<deleteButtons.length; i++){
+      deleteButtons[i].addEventListener('click', deleteFunction);
+  }
+};
+
   const gethouseselector = () => {
-  let randomNumber =  Math.floor((Math.random()*4)+1)
+  let randomNumber =  Math.floor((Math.random()*4)+1);
   let houseType = '';
-  if(randomNumber ==1){ houseType = "Griffindoor"}
-  if(randomNumber ==2){ houseType = "Hufflepuff"}
-  if(randomNumber ==3){ houseType = "Slitherin"}
-  if(randomNumber ==4){ houseType = "Ravinclaw"}
+  if(randomNumber ==1){ houseType = "Griffindoor"};
+  if(randomNumber ==2){ houseType = "Hufflepuff"};
+  if(randomNumber ==3){ houseType = "Slitherin"};
+  if(randomNumber ==4){ houseType = "Ravinclaw"};
 
   return houseType;
  };
@@ -51,7 +68,7 @@ const printToDom = (divId, textToPrint) => {
   const addStudents = (e) => {
       e.preventDefault();
       const inputText = inputName.value;
-      const studentHouse = gethouseselector;
+      const studentHouse = gethouseselector();
       const newStudent = {
           item: inputText, 
           id: `student${studentCounter}`,
@@ -60,7 +77,7 @@ const printToDom = (divId, textToPrint) => {
       students.push(newStudent);
       studentCounter++;
       domStringBuilder(students);
-      // addDeleteEvents();
+      addDeleteEvents();
       inputName.value = '';
   }
   

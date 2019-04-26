@@ -1,6 +1,18 @@
-.body{
-    background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfcAAABkCAMAAACsLolMAAAAQlBMVEWMHjWZYjm7YzZ6QTTinQlqFyirdwfmnwm+ZTdcMSeOSyl0Sit4PzSfVDWXYDm+ZzbIiCGBWgVQER55QChxSCyXZxnSbSxyAAABM0lEQVR4nO3R2RWCMBAAwHgkcgkCof9WfRax++NMC1OOmmBKcI4J+hyuXy3eXmpJsA3x3ssj3HKLt35e8VrS+z1czvua8v6M5t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37t27d+/evXv37v3P34d4Ke/x7b/3eK0cNcGU4BwT9Dlcv1q8/QtnKs6M4rfXWwAAAABJRU5ErkJggg==");
+.jumbotron {
+    background-image: url("https://s3.amazonaws.com/user-media.venngage.com/771295-3f3715585867113cb36ece2a3df9b01d.jpg");
     background-position: center center ; 
     background-size: cover;
     background-attachment: fixed;
+}
+
+.lead {
+    font-size: 2rem;
+    font-weight: 300;
+    font-style: oblique;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    font-style: italic;
 }
