@@ -6,13 +6,29 @@
 }
 
 .lead {
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: 300;
     font-style: oblique;
+    font-display: bold;
 }
 p {
     margin-top: 0;
     margin-bottom: 1rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-style: italic;
+}
+.card-body{
+    background-image: url("https://i.pinimg.com/originals/1d/4c/6c/1d4c6c316681c90f30baeeddda1fd9a9.png");
+    background-position: center center ; 
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+
+#sort{
+    width: 250px;
+}
+#name{
+    width: 250px;  
+
 }

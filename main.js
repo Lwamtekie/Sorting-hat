@@ -1,11 +1,12 @@
 const sortbutton = document.getElementById("sort")
 const inputName = document.getElementById("name")
 
-const students = [];
+
+let students = [];
 let studentCounter= 1;
 
 const buildStudentObjects = () => {
-  let student = {
+  let  = {
     name:getinputvalue(),
     house:gethouseselector()
   }
@@ -22,12 +23,14 @@ const printToDom = (divId, textToPrint) => {
 };
 const deleteFunction = (e) => {
   const buttonId = e.target.id;
-  student.forEach((student, index) => {
-    if(student.id === buttonId){
-      student.splice(index, 1);
+  let tempArray = [];
+  students.forEach((student) => {
+    if(student.id !== buttonId){
+     tempArray.push(student);
     }
   })
-  domStringBuilder(student);
+  students = tempArray;
+  domStringBuilder(students);
   addDeleteEvents();
 };
 
@@ -61,7 +64,7 @@ const addDeleteEvents = () => {
     domString += `</div>`;
 
    });
-
+   addDeleteEvents();
    printToDom('student-container', domString);
   };
    
