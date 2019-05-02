@@ -1,3 +1,83 @@
-.body{
-    background-color: blanchedalmond;
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color:rgb(124, 27, 27) !important;
 }
+.jumbotron {
+    background-image: url("http://www.harrypotterscriptbook.com.au/countdown/img/background/banner-bg.jpg");
+    background-position: center center ; 
+    background-size: cover;
+    background-attachment: fixed;
+    max-height: 450px;
+    max-width: 1200px;
+    margin-right: 4rem;
+    margin-left: 7rem;
+    margin-top: 2rem;
+}
+
+.card {
+    position: relative;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    min-width: 0;
+    word-wrap: break-word;
+    background-image:url("https://stmed.net/sites/default/files/harry-potter-and-the-order-of-the-phoenix-wallpapers-29603-1689438.jpg");
+    background-position: center center ; 
+    background-size: cover;
+    background-attachment: fixed;
+    background-clip: border-box;
+    border: 1px solid rgba(0,0,0,.125);
+    border-radius: 4rem;
+    -webkit-margin-after-collapse: separate;
+    border-bottom-left-radius: 4rem;
+    border-color: cornflowerblue;
+   } 
+
+    .lead {
+    font-size: 1.5rem;
+    font-style: oblique;
+    font-display: bold;
+}
+p {
+    margin-top: 0;
+    margin-bottom: 1.25rem;
+    font-size: 1.25rem;
+    font-style: italic;
+}
+#sort{
+    width: 200px;
+    margin-bottom: 1rem;
+}
+#name{
+    width: 250px;  
+    margin-left: 2rem;
+    margin-left: 27rem;
+    background-color: rgb(250, 250, 144);
+
+}
+.card-title {
+    color:red;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    font-size: 2rem;
+    font-style: italic;
+};
+.header{
+    font-size: 2.5rem;
+    align-items: center;
+    margin-left: 16rem;
+    font-style: oblique;
+}       
+
+
+
+
+
