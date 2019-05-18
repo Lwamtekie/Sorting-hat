@@ -19,6 +19,11 @@
 
 ![image of sorting hat](https://raw.githubusercontent.com/Lwamtekie/Sorting-hat/master/screenshot/Screen%20Shot%202019-05-02%20at%206.22.08%20PM.png)
 
+#How To Run Clone this repository: 
+git clone https://github.com/Lwamtekie/Sorting-hat Go into the repository cd personal-site Run http server hs -p 5000
+
+
+
 
 
 #Author: Lwam Tekie 
